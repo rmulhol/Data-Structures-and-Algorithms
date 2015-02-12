@@ -8,61 +8,101 @@ public class mergeSortTest {
     mergeSort testObject = new mergeSort();
 
     @Test
-    public void mergeSortSortsArrayOfThreeInts() {
-        int[] threeIntArray = new int[]{9, 1, 2};
-        int[] expectedArray = new int[]{1, 2, 9};
+    public void mySortSortsArrayOfIntegers() {
+        Comparable[] intArray = new Integer[]{10, 5, 9, 4, 8, 3, 7, 2, 6, 1};
+        Comparable[] expectedArray = new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
-        int[] returnedArray = testObject.mySort(threeIntArray, 0, 2);
+        Comparable[] returnedArray = testObject.mySort(intArray);
+
+        assertArrayEquals(expectedArray, returnedArray);
+    }
+
+    @Test
+    public void mySortSortsArrayOfStrings() {
+        Comparable[] stringArray = new String[]{"zap", "car", "bag", "the", "pie"};
+        Comparable[] expectedArray = new String[]{"bag", "car", "pie", "the", "zap"};
+
+        Comparable[] returnedArray = testObject.mySort(stringArray);
+
+        assertArrayEquals(expectedArray, returnedArray);
+    }
+
+    @Test
+    public void mergeSortSortsArrayOfThreeInts() {
+        Comparable[] threeIntArray = new Comparable[]{9, 1, 2};
+        Comparable[] expectedArray = new Comparable[]{1, 2, 9};
+
+        Comparable[] returnedArray = testObject.mergeSort(threeIntArray, 0, 2);
 
         assertArrayEquals(expectedArray, returnedArray);
     }
 
     @Test
     public void mergeSortSortsArrayOfSixInts() {
-        int[] sixIntArray = new int[]{6, 3, 1, 4, 5, 2};
-        int[] expectedArray = new int[]{1, 2, 3, 4, 5, 6};
+        Comparable[] sixIntArray = new Comparable[]{6, 3, 1, 4, 5, 2};
+        Comparable[] expectedArray = new Comparable[]{1, 2, 3, 4, 5, 6};
 
-        int[] returnedArray = testObject.mySort(sixIntArray, 0, 5);
+        Comparable[] returnedArray = testObject.mergeSort(sixIntArray, 0, 5);
 
         assertArrayEquals(expectedArray, returnedArray);
     }
 
     @Test
     public void mergeSortSortsArrayOfTenInts() {
-        int[] tenIntArray = new int[]{1, 3, 5, 7, 9, 2, 4, 6, 8, 10};
-        int[] expectedArray = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        Comparable[] tenIntArray = new Comparable[]{1, 3, 5, 7, 9, 2, 4, 6, 8, 10};
+        Comparable[] expectedArray = new Comparable[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
-        int[] returnedArray = testObject.mySort(tenIntArray, 0, 9);
-
-        assertArrayEquals(expectedArray, returnedArray);
-    }
-
-    @Test
-    public void mergeOrdersTwoInts() {
-        int[] twoInts = new int[]{9, 1};
-        int[] expectedArray = new int[]{1, 9};
-
-        int[] returnedArray = testObject.myMerge(twoInts, 0, 0, 1);
+        Comparable[] returnedArray = testObject.mergeSort(tenIntArray, 0, 9);
 
         assertArrayEquals(expectedArray, returnedArray);
     }
 
     @Test
-    public void mergeOrdersTwoSortedArraysOfUnevenLength() {
-        int[] unevenArrays = new int[]{1, 5, 9, 3, 7};
-        int[] expectedArray = new int[]{1, 3, 5, 7, 9};
+    public void mergeSortSortsArrayOfStrings() {
+        Comparable[] stringArray = new String[]{"zap", "car", "bag", "the", "pie"};
+        Comparable[] expectedArray = new String[]{"bag", "car", "pie", "the", "zap"};
 
-        int[] returnedArray = testObject.myMerge(unevenArrays, 0, 2, 4);
+        Comparable[] returnedArray = testObject.mergeSort(stringArray, 0, 4);
 
         assertArrayEquals(expectedArray, returnedArray);
     }
 
     @Test
-    public void mergeOrdersTwoSortedArraysOfFiveInts() {
-        int[] twoSortedArrays = new int[]{1, 3, 5, 7, 9, 2, 4, 6, 8, 10};
-        int[] expectedArray = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    public void mergeMergesTwoInts() {
+        Comparable[] twoInts = new Comparable[]{9, 1};
+        Comparable[] expectedArray = new Comparable[]{1, 9};
 
-        int[] returnedArray = testObject.myMerge(twoSortedArrays, 0, 4, 9);
+        Comparable[] returnedArray = testObject.myMerge(twoInts, 0, 0, 1);
+
+        assertArrayEquals(expectedArray, returnedArray);
+    }
+
+    @Test
+    public void mergeMergesTwoSortedArraysOfUnevenLength() {
+        Comparable[] unevenArrays = new Comparable[]{1, 5, 9, 3, 7};
+        Comparable[] expectedArray = new Comparable[]{1, 3, 5, 7, 9};
+
+        Comparable[] returnedArray = testObject.myMerge(unevenArrays, 0, 2, 4);
+
+        assertArrayEquals(expectedArray, returnedArray);
+    }
+
+    @Test
+    public void mergeMergesTwoSortedArraysOfFiveInts() {
+        Comparable[] twoSortedArrays = new Comparable[]{1, 3, 5, 7, 9, 2, 4, 6, 8, 10};
+        Comparable[] expectedArray = new Comparable[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        Comparable[] returnedArray = testObject.myMerge(twoSortedArrays, 0, 4, 9);
+
+        assertArrayEquals(expectedArray, returnedArray);
+    }
+
+    @Test
+    public void mergeMergesTwoSortedArraysOfStrings() {
+        Comparable[] stringArray = new String[]{"bag", "car", "the", "pie", "zap"};
+        Comparable[] expectedArray = new String[]{"bag", "car", "pie", "the", "zap"};
+
+        Comparable[] returnedArray = testObject.myMerge(stringArray, 0, 2, 4);
 
         assertArrayEquals(expectedArray, returnedArray);
     }
