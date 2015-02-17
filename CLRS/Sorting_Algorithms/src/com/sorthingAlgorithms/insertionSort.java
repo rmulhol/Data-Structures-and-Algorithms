@@ -3,6 +3,10 @@ package com.sorthingAlgorithms;
 public class insertionSort implements sortable {
     @Override
     public Comparable[] mySort(Comparable[] list) {
+        return insertionSort(list);
+    }
+
+    public Comparable[] insertionSort(Comparable[] list) {
         for (int j = 1; j < list.length; j++) {
             Comparable key = list[j];
             int i = j - 1;
