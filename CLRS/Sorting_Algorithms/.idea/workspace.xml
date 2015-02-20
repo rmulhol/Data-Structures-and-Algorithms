@@ -83,8 +83,8 @@
       <file leaf-file-name="quickSort.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/sorthingAlgorithms/quickSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22670025" vertical-offset="0" max-vertical-offset="630">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.4534005" vertical-offset="135" max-vertical-offset="765">
+              <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -93,7 +93,7 @@
       <file leaf-file-name="quickSortTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/sorthingAlgorithms/quickSortTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
+            <state vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="1455">
               <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -262,7 +262,7 @@
       <recent name="com.sorthingAlgorithms" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.quickSortTest">
+  <component name="RunManager" selected="JUnit.All in Sorting_Algorithms">
     <configuration default="false" name="insertionSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -533,8 +533,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.quickSortTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in Sorting_Algorithms" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in Sorting_Algorithms" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.quickSortTest" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.mergeSortTest" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.bubbleSortTest" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.insertionSortTest" />
@@ -577,7 +577,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24975124" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328594" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328594" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -972,7 +972,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/sorthingAlgorithms/quickSortTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
+        <state vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="1455">
           <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -982,8 +982,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sorthingAlgorithms/quickSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22670025" vertical-offset="0" max-vertical-offset="630">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.4534005" vertical-offset="135" max-vertical-offset="765">
+          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
           <folding />
         </state>
       </provider>
