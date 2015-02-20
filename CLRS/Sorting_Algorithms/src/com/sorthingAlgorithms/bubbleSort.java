@@ -17,10 +17,9 @@ public class bubbleSort implements sortable {
         return list;
     }
 
-    public Comparable[] exchange(Comparable[] list, int i, int j) {
+    public void exchange(Comparable[] list, int i, int j) {
         Comparable initialValue = list[i];
         list[i] = list[j];
         list[j] = initialValue;
-        return list;
     }
 }

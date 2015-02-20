@@ -66,17 +66,17 @@ public class bubbleSortTest {
     public void exchangeSwapsTwoElements() {
         Comparable[] testArray = new Integer[]{2, 1};
         Comparable[] expectedArray = new Integer[]{1, 2};
-        Comparable[] returnedArray = testObject.exchange(testArray, 0, 1);
+        testObject.exchange(testArray, 0, 1);
 
-        assertArrayEquals(expectedArray, returnedArray);
+        assertArrayEquals(expectedArray, testArray);
     }
 
     @Test
     public void exchangeDoesNotModifyOtherElements() {
         Comparable[] testArray = new Integer[]{5, 1, 4, 2, 3};
         Comparable[] expectedArray = new Integer[]{1, 5, 4, 2, 3};
-        Comparable[] returnedArray = testObject.exchange(testArray, 0, 1);
+        testObject.exchange(testArray, 0, 1);
 
-        assertArrayEquals(expectedArray, returnedArray);
+        assertArrayEquals(expectedArray, testArray);
     }
 }
